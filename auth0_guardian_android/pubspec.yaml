@@ -1,6 +1,6 @@
 name: auth0_guardian_android
 description: "Android implementation of the auth0_guardian plugin."
-version: 0.1.1
+version: 0.1.2
 repository: https://github.com/Kpler/auth0-guardian-flutter/tree/main/auth0_guardian_android
 issue_tracker: https://github.com/Kpler/auth0-guardian-flutter/issues
 topics: 

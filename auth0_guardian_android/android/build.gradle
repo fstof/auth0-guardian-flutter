@@ -52,8 +52,10 @@ android {
     dependencies {
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
-        implementation("com.auth0.android:guardian:0.8.0")
-        implementation("com.squareup.okhttp3:okhttp")
+        implementation platform('com.squareup.okhttp3:okhttp-bom:4.10.0')
+        implementation("com.auth0.android:guardian:0.8.0") {
+            exclude group:"com.squareup.okhttp3", module:"okhttp-bom"
+        }
         implementation("androidx.security:security-crypto:1.0.0-rc03")
     }
 
